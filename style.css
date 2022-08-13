@@ -1,0 +1,596 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --body-background: #0e0e0e;
+  --color-logo: #ff5b50;
+  --card-color: #252525;
+  --text-color: #fff;
+  --subtitle-color: #5a5757;
+  --black-text: #000;
+  --color-input: #0D0D0D;
+
+  /* font */
+  --font: 'Montserrat', sans-serif;
+
+  font-size: 62.5%;
+}
+
+/* BASE */
+body {
+  font-family: var(--font);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.alignment {
+  padding: 0 8.056rem 0 8.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HOME */
+#home {
+  height: 920px;
+  background: url(./assets/background.png);
+}
+
+#home header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5.7rem;
+}
+
+#home header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+#home header ul li a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+#home header .conect .button img {
+  margin-right: 1.5rem;
+}
+
+#home header .conect .button {
+  width: 23rem;
+  height: 5rem;
+  background: var(--text-color);
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 0;
+  color: var(--black-text);
+  padding: 1.4rem 2.2rem 1.5rem 1.4rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#home .description {
+  margin-top: 9rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+#home .description .text p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+#home .description .artists {
+  margin-top: 5.5rem;
+
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+#home .description .artists .images {
+  position: absolute;
+}
+
+#home .description .artists .images img {
+  position: relative;
+  top: 5.5rem;
+
+}
+
+#home .description .artists .images img:nth-child(1) {
+  z-index: 4;
+}
+
+#home .description .artists .images img:nth-child(2) {
+  right: 7.5rem;
+  z-index: 3;
+}
+
+#home .description .artists .images img:nth-child(3) {
+  right: 14rem;
+  z-index: 2;
+}
+
+#home .description .artists .images img:nth-child(4) {
+  right: 22rem;
+  z-index: 1;
+}
+
+#home .description .artists .text-2 {
+  position: relative;
+  top: 5rem;
+  left: 19rem;
+}
+
+#home .description .text p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+
+#home .description .title h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+#home .description h2 span {
+  color: var(--color-logo);
+}
+
+#home .gallery {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+#home .gallery img {
+  width: 27.5rem;
+  border: 1px solid var(--text-color);
+  margin-left: 1.616rem;
+  margin-bottom: 6.044rem;
+  padding-bottom: 0;
+}
+
+#home .gallery img:nth-of-type(1),
+#home .gallery img:nth-of-type(5) {
+  margin-left: 0;
+}
+
+#home .gallery img:nth-of-type(5),
+#home .gallery img:nth-of-type(6),
+#home .gallery img:nth-of-type(7),
+#home .gallery img:nth-of-type(8) {
+  margin-bottom: 0;
+}
+
+/*===== INFROMATION =====*/
+#information {
+  background: var(--body-background);
+  overflow-x: hidden;
+  border-bottom: 1px solid var(--subtitle-color);
+}
+
+#information .alignment {
+  display: flex;
+  justify-content: space-between;
+}
+
+#information aside {
+  border-right: 1px solid var(--subtitle-color);
+}
+
+#information aside .numbers {
+  padding: 13.3rem 6.7rem 13.315rem 2rem;
+}
+
+#information aside .numbers .number {
+  text-align: center;
+}
+
+#information aside .numbers .number h2 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+#information aside .numbers .number p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--subtitle-color);
+}
+
+#information aside .numbers .number:nth-of-type(2),
+#information aside .numbers .number:nth-of-type(3) {
+  margin-top: 7rem;
+}
+
+#information .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#information .content .texts p{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+#information .content .texts {
+  margin: 7.06rem 13.8rem 0 6.8rem;
+  
+  display: flex;
+  align-items: center;
+  gap: 12.6rem;
+  
+}
+
+#information .content .texts p + p {
+  text-decoration: underline;
+  margin-top: 6.3rem;
+  margin-left: 0;
+}
+
+#information .content .texts p > span {
+  color: var(--color-logo);
+  text-decoration: underline;
+}
+
+
+/*===== HIGHLIGHTS ====*/
+#highlights {
+  background: var(--body-background);
+
+  padding-top: 14.999rem;
+}
+
+#highlights header h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+#highlights header h2 span {
+  color: var(--color-logo);
+}
+
+#highlights .columns {
+  margin-top: 17.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+#highlights .columns .column .highlight {
+  display: flex;
+  flex-direction: column;
+}
+
+#highlights .columns .column .highlight + .highlight {
+  margin-top: 5rem;
+}
+
+#highlights .columns .column .highlight .caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#highlights .columns .column .highlight .caption h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#highlights .columns .column .highlight > p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--subtitle-color);
+  margin: 4.4rem 0 3.4rem 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#highlights .columns .column .highlight > p span {
+  font-weight: 400;
+  color: #ff5b50;
+}
+
+#highlights .columns .column .highlight > img {
+  width: 30.5rem;
+}
+
+#highlights .columns .divider {
+  height: 108vh;
+
+  border: 1px solid var(--subtitle-color);
+}
+
+
+/*===== ARTISTS =====*/
+#artists {
+  background: var(--body-background);
+
+  padding-top: 15.1rem;
+}
+
+#artists header {
+  text-align: center;
+}
+
+#artists header h2 {
+  font-size: 5rem;
+  font-weight: 700
+}
+
+#artists header h2 span {
+  color: var(--color-logo);
+}
+
+#artists .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11.1rem;
+}
+
+#artists .row + .row {
+  margin-top: 11.1rem;
+}
+
+#artists .row:nth-of-type(1) {
+  margin-top: 12rem;
+}
+
+#artists .row .artist {
+  width: 35rem;
+  background: var(--card-color);
+}
+
+#artists .row:nth-of-type(1) .artist:nth-of-type(2) {
+  background-color: #ff5b50;
+}
+
+#artists .row:nth-of-type(1) .artist:nth-of-type(2) p span {
+  color: var(--text-color);
+}
+
+
+#artists .row .artist > div {
+  padding: 2.5rem 2.1rem 2.5rem 3.6rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#artists .row .artist > div img {
+  width: 80px;
+  height: 80px;
+}
+
+#artists .row .artist > div p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#artists .row .artist > div p span {
+  color: var(--color-logo);
+}
+
+#artists .ancora {
+  text-align: center;
+  padding-bottom: 14.766rem;
+}
+
+#artists .ancora a {
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  color: var(--text-color);
+  margin-top: 6.3rem;
+} 
+
+#artists .ancora a img {
+  margin-left: 2.259rem;
+}
+
+
+/* FOOTER */
+footer {
+  background: var(--card-color);
+
+}
+
+footer header {
+  border-bottom: 1px solid var(--subtitle-color);
+}
+
+
+footer header .content {
+  padding: 8.2rem 8.8rem 6rem 8.7rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer header h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+footer header h2 span {
+  color: #ff5b50;
+}
+
+footer header .button {
+  background: var(--color-logo);
+  padding: 2.85rem 2.736rem 2.865rem 2.979rem;
+}
+
+footer .menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .menu .input {
+  border-right: 1px solid var(--subtitle-color);
+  padding: 6.7rem 6.2rem 8.2rem 0;
+}
+
+footer .menu .input h3 {
+  font-size: 3rem;
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer .menu .input h3 > span {
+  color: var(--color-logo);
+}
+
+footer .menu .input .email {
+  margin-top: 2.5rem;
+  background: var(--color-input);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .menu .input .email input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 2rem;
+  color: var(--text-color);
+  padding: 2rem 2.5rem 2rem 2rem;
+}
+
+footer .menu .input .email input::placeholder {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+
+footer .menu .input .email button {
+  background: var(--text-color);
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  padding: 0 2.6rem 0 2.5rem;
+  cursor: pointer;
+}
+
+footer .navigation {
+  margin-right: 10.2rem;
+
+  display: flex;
+  gap: 12.8rem;
+}
+
+footer .navigation .nav {
+  margin-top: 6.7rem;
+}
+
+footer .navigation .nav p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+footer .navigation .nav ul {
+  margin-top: 1.7rem;
+  
+  display: grid;
+  gap: 1.5rem;
+}
+
+footer .navigation .nav ul li {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--subtitle-color);
+
+  cursor: pointer;
+}
+
+footer .contacts {
+  padding-bottom: 6.8rem;
+  border-top: 1px solid var(--subtitle-color);
+}
+
+footer .contacts .alignment {
+  margin-top: 6.9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .contacts p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--subtitle-color);
+}
+
+footer .contacts .social-networks { 
+  display: flex;
+  gap: 5rem;
+}
+
+footer .contacts .social-networks a {
+  transition: .2s;
+}
+
+footer .contacts .social-networks a:hover {
+  transform: translate3d(0, -0.7rem, 0);
+}
+
+
+/*  ======== ANIMATION ======== */
+.anime {
+  opacity: 0;
+  transition: .3s;
+}
+
+.anime.top {
+  transform: translate3d(0, -5rem, 0);
+}
+
+.anime.left {
+  transform: translate3d(-5rem, 0, 0);
+}
+
+.anime.right {
+  transform: translate3d(5rem, 0, 0);
+}
+
+.anime.bottom {
+  transform: translate3d(0, 5rem, 0);
+}
+
+.anime.animation {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
